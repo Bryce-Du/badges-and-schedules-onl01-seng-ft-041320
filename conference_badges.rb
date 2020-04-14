@@ -17,3 +17,11 @@ def assign_rooms (speakers)
   end
   return room_assignments
 end
+
+def printer (names)
+  badges = batch_badge_creator(names)
+  badges.each {|badge| puts badge}
+  assignments = assign_rooms(names)
+  assignments.each {|assignment| puts assignment}
+  
+end
